@@ -1,5 +1,5 @@
 #!/bin/bash
-# silke.
+# (c) 2016 juergen@junes.eu
 # Adapt some variables ($DOWNLOADDIR, $WORKDIR) for your needs.
 # Run the script like this: dm-package.sh <last-version> <new-version> without any dots in the version numbers, e.g. dm-package.sh 413 42 (from 4.1.3 to 4.2) or dm-package.sh 42 43 (from 4.2 to 4.3).
 
@@ -9,7 +9,9 @@ DOWNLOADDIR="<set a directory>"
 TMPDIR="/tmp"
 WORKDIR="<the directory you git-cloned into"
 
-# yet to be done: Check if there is already an existing package with the new version number.
+# yet to be done: 
+# - Check if there is already an existing package with the new version number.
+# - Copy original README.txt to README.source
 
 # Check if both, last and new version numbers are given.
 if [ "$2" == "" ]; then
